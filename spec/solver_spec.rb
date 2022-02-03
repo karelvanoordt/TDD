@@ -1,8 +1,10 @@
 require './solver'
 
 describe 'test methods' do
-
-    @solver = Solver.new
+    
+    before :each do
+        @solver = Solver.new
+    end
 
     ## factorial method validation
     it 'should return the factorial for the number n' do
